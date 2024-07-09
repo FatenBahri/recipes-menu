@@ -1,0 +1,238 @@
+       *{
+
+          
+            
+             
+             box-sizing: border-box;
+             font-family: Arial, sans-serif;
+
+        }
+body{
+  /*background-color: bisque;*/
+  
+  background-color: white;
+ /* padding: 0 300px;     /* cad 0 top and bottom and 300px for right and lest*/ 
+
+}
+
+       
+        
+        header{
+
+            width: 100%;
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10px;
+
+            background-color: rgb(0,0,0,0.5);
+
+        }
+
+        .title{
+            
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding-top: 15px;
+
+        }
+        
+
+         a {
+            
+            
+            color: #f2f2f2;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 12px 13px;
+            text-decoration: none;
+            cursor: pointer;
+
+
+        }
+
+        .navbar li{
+            list-style-type: none;
+            display: inline-block;
+            margin: 0px ;
+            padding: 10px 10px;
+            padding-top: 25px;
+            
+
+
+        }
+        .navbar ul li a:hover {
+            background-color: lightgrey;
+            color: darkorange;
+            border-radius: 20px;
+        }
+        
+   
+
+
+
+
+
+.container{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+
+   
+  
+    
+
+}
+
+  .container > div {
+    /*margin: 0 10px; /* Ajoutez l'espacement horizontal entre les div */
+
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    text-align: center;
+    /*background-image: url(background.jpg);*/
+   /* width: 200px; */
+}
+  .recipe-button {
+    display: inline-block;
+    text-decoration: none; /* Supprimer le soulignement du lien */
+    transition: background-color 0.2s ease; /* Transition de couleur de fond avec une durée de 0.2s */
+    border: 1px solid #ffc000;
+    border-radius: 30px;
+    padding: 13px 34px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+  }
+  .recipe-button:hover {
+    background-color: #bf6ea7; /* Couleur de fond au survol (exemple) */
+  }
+  h3
+  {
+    font-family: "Satisfy", cursive;
+    color: #000000;}
+    img {
+  
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+    }
+    p{ 
+     /* margin-top: 0;
+      margin-bottom: 1rem;*/
+      margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start:0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    font-size: large;
+    
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+   }
+   .titre{
+    color:#bf6ea7;
+   }
+    /*div{
+        display: block;
+    }*/
+   footer{
+    
+    position: absolute;/*t5alik tet7akem fel blasa ta3 box w tarala7 bottom w top left right kima n7eb*/
+    bottom:-280%;/*nhabet louta*/
+    
+    background: #111;/*color background */
+    height: 40%;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 0px;/*espace mabin ktiba w box*/
+    color: #fff;/*color ktiba white */
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: white;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 16px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 5px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+h2.divider {
+    border: 2px black bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: .3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+      
+}
+.divider span {
+    background-color: #fff;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+}
+hr{
+   
+  justify-content: center;
+}

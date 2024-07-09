@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title> contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="website icon" type="png" href="icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  
+    
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Addresse</div>
+          <div class="text-one">tunis, rue liberte</div>
+          
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Portable</div>
+          
+          <div class="text-two">+216 25897321</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">foody@gmail.com</div>
+        
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Envoyer-nous un message</div>
+        <p>n'hésitez pas à nous contacter sur nos réseaux sociaux!</p>
+        <script type="text/javascript">
+
+   function ValiderMail(formulaire) {
+      if (formulaire.mail.value.indexOf("@",0)<0) {alert("Adresse mail saisie invalide.\nLe formulaire ne sera pas validé.")}
+      else {
+         alert("formulaire validé.\nPour valider un formulaire : formulaire.submit()");
+         // Pour valider le formulaire en javascript :
+         // formulaire.submit()
+      }
+   }
+</script>
+      <form action="#">
+        
+          <input type="text" name="nom" placeholder="Entrer votre nom">
+          
+          <br>
+          <br>
+
+        
+          <input type="text"  name="mail" placeholder="Entrer votre email">
+        
+          <br>
+          <br>
+          <input type="button" name="bouton" value="envoyer" onclick="ValiderMail(this.form)">
+        
+      </form>
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin:0px; /*Aucune marge extérieure.*/
+    
+    padding:0px; /* Aucun espacement intérieur*/
+    box-sizing:border-box;  /*Les dimensions (largeur et hauteur) incluent la bordure et le rembourrage, mais pas la marge.*/
+    font-family: "Arial",sans-serif;
+}
+.hero{
+    background: color #f8f8f8; 
+    overflow: hidden;  /*Cache tout contenu dépassant de la boîte.*/
+
+}
+.heading h1{
+    color:#ff6347;
+    font-size: 55px;
+    text-align:center;
+    margin-top:35px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items:center;   /*Centre les éléments verticalement.*/
+    width:90%; 
+    margin:65px auto ;
+}
+.hero-content{
+    flex:1;    /*Le contenu prend autant d'espace que possible.*/
+    width:600px;
+    margin:0px 25px;
+    animation: fadeInUp 2s ease;    /*Applique une animation de fondu vers le haut avec une durée de 2 secondes et une accélération.*/
+
+}
+.hero-content h2{
+    font-size:38px;
+    margin-bottom:20px;
+    color:dimgray;
+}
+.hero-content p{ 
+    font-size:24px;
+    line-height:1.5; /*Cela ajoute un espacement vertical entre les lignes pour améliorer la lisibilité.
+                      la hauteur de ligne sera 1.5 fois la taille de la police.*/
+    margin-bottom: 40px;
+    color:#666;
+}
+.hero-content button{
+    display: inline-block;
+    background-color: #ff4500;
+    color:#fff;
+    padding:12px 24px ;
+    border-radius:5px;
+    font-size:20px;
+    border:none;
+    cursor:pointer; /*Définit le curseur qui apparaîtra lorsque l'utilisateur survolera le bouton(une main) */
+    transition: 0.3s ease;   /*Transition fluide au bouton de 0.3 seconde avec une accélération.*/
+
+}
+.hero-content button:hover{
+    background-color: #ff6347;
+    transform: scale(1.1); /* applique une échelle au bouton lorsqu'il est survolé.
+                            L'échelle est définie à 1.1, ce qui signifie que la taille du bouton augmentera de 10 % par rapport à sa taille normale.*/
+}
+.hero-image{ 
+    flex:1;
+    width:600px;
+    margin:auto;
+    animation: fadeInRight 2s ease;
+}
+img{
+    width:100%;
+
+}
+                                             /* les animations */
+
+                                             
+@keyframes fadeInUp{   /*Définit une animation nommée "fadeInUp".*/
+    0%{     /* État initial de l'animation, au début.*/
+        opacity: 0;   /*L'élément est complètement transparent.*/
+        transform:translateY(50px);  /*L'élément est déplacé vers le haut de 50 pixels.*/
+    }
+    100%{
+        opacity: 0;
+        transform:translateY(0px);
+    }
+}
+@keyframes fadeInRight{   /* Définit une animation nommée "fadeInRight".*/
+    0%{
+        opacity: 0;   /*L'élément est complètement transparent.*/
+        transform:translateX(-50px); /*L'élément est déplacé vers la gauche de 50 pixels*/
+    }
+    100%{   /*État final de l'animation, à la fin.*/
+        opacity: 1;   /*L'élément devient complètement opaque.*/
+        transform:translateX(0px);  /*L'élément revient à sa position initiale, sans déplacement horizontal.*/
+    } 
+}
+    
+
+
+.masquée{
+    display:none; /*masquer la derniere section */
+}
+
+
+    
